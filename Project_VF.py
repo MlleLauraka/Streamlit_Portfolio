@@ -15,7 +15,7 @@ import seaborn as sns
 st.set_page_config(layout="wide")
 
 with st.sidebar:
-    choose = option_menu("Menu", ["About", "DeFi Analytic Paper - ML Regression Model", "Crypto Categories Vizualization - Engineering with Python", "Crypto Exchanges Analysis with Tableau", "Business Performance Analysis with SQL"], #https://icons.getbootstrap.com/
+    choose = option_menu("Menu", ["About", "Mitigating Smart Contract Risk in Clearing and Settlement", "DeFi Analytic Paper - ML Regression Model", "Crypto Categories Vizualization - Engineering with Python", "Crypto Exchanges Analysis with Tableau", "Business Performance Analysis with SQL"], #https://icons.getbootstrap.com/
                          icons=['battery-charging','lightbulb', 'currency-bitcoin','bar-chart-line','activity'],
                          menu_icon="caret-down-fill", default_index=0,
 
@@ -143,7 +143,7 @@ if choose == "About":
 
         )
 
-if choose == "Mitigating Smart Contract Risk":
+if choose == "Mitigating Smart Contract Risk in Clearing and Settlement":
     
     # Apply the same custom font style
     st.markdown(""" <style> .font { font-size:35px ; font-family: 'Cooper Black'; color: #C3DCE7 ;} </style> """, unsafe_allow_html=True)
