@@ -26,7 +26,14 @@ if choose == "About":
     st.markdown(""" <style> .font {
             font-size:45px ; font-family: 'Cooper Black'; color:#C3DCE7  ;} 
             </style> """, unsafe_allow_html=True)
-    st.markdown('<p class="font">Laura Kouadio Profile </p>', unsafe_allow_html=True)
+    st.markdown(
+    """
+    <h1 class="font" style="font-size: 50px;">
+    Laura Kouadio Profile
+    </h1>
+    """, 
+    unsafe_allow_html=True
+)
     column1, column2 = st.columns([0.6, 0.4])
     current_picture = Image.open("Pictures & Dataset Used/test_linkedin.png")
     column1.image(current_picture, width=400)
@@ -290,7 +297,15 @@ if choose == "DeFi Analytic Paper - ML Regression Model":
 #-Set the Style for the title
     st.markdown(""" <style> .font { font-size:35px ; font-family: 'Cooper Black'; color: #C3DCE7 ;} </style> """, unsafe_allow_html=True)
 
-    st.markdown('<p class="font"> Decentralized finance: An analysis of the potential and threats to its growth</p>', unsafe_allow_html=True)
+    
+    st.markdown(
+    """
+    <h1 class="font" style="font-size: 50px;">
+    Decentralized finance: An analysis of the potential and threats to its growth
+    </h1>
+    """, 
+    unsafe_allow_html=True
+)
     st.markdown("""---""")
 #Download Analytic Paper   
     with open("Pictures & Dataset Used/Decentralized Finance.pdf", "rb") as file:
