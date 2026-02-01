@@ -160,7 +160,7 @@ if choose == "Mitigating Smart Contract Risk in Clearing and Settlement":
     st.markdown("""---""")
 
     # Intro
-    st.markdown('<div style="text-align: justify"> Tokenization is at the forefront of project development pipelines for the largest banks (JP Morgan with JPMD launch, Citi with SDX partnership…). As the financial industry moves toward "atomic settlement," the reliance on smart contracts to enable tokenization introduces a new layer of operational and model risk. This article explores how institutional-grade governance can safeguard the next generation of DLT-based market infrastructure. </div>', unsafe_allow_html=True)
+    st.markdown('<div style="text-align: justify"> Tokenization is at the forefront of project development pipelines for the largest banks, evidenced by J.P. Morgan’s JPM Coin launch and Citi’s partnership with SDX. As the financial industry moves toward "atomic settlement," the reliance on smart contracts to enable tokenization introduces a new layer of operational and model risk. This article explores how institutional-grade governance can safeguard the next generation of DLT-based market infrastructure. </div>', unsafe_allow_html=True)
     
     st.markdown("""---""")
 
