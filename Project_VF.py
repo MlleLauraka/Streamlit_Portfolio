@@ -143,6 +143,82 @@ if choose == "About":
 
         )
 
+# ---------------------------------------------------------------------------------------------------------
+# NEW SECTION: Mitigating Smart Contract Risk
+# ---------------------------------------------------------------------------------------------------------
+if choose == "Mitigating Smart Contract Risk":
+    
+    # Apply the same custom font style
+    st.markdown(""" <style> .font { font-size:35px ; font-family: 'Cooper Black'; color: #C3DCE7 ;} </style> """, unsafe_allow_html=True)
+
+    # Title
+    st.markdown(
+    """
+    <h1 class="font" style="font-size: 50px;">
+    Mitigating Smart Contract Risk in Clearing and Settlement
+    </h1>
+    """, 
+    unsafe_allow_html=True
+    )
+    st.markdown("""---""")
+
+    # Intro
+    [cite_start]st.markdown('<div style="text-align: justify"> Tokenization is at the forefront of project development pipelines for the largest banks (JP Morgan with JPMD launch, Citi with SDX partnership…)[cite: 2]. [cite_start]As the financial industry moves toward "atomic settlement," the reliance on smart contracts to enable tokenization introduces a new layer of operational and model risk[cite: 3]. [cite_start]This article explores how institutional-grade governance can safeguard the next generation of DLT-based market infrastructure[cite: 4]. </div>', unsafe_allow_html=True)
+    
+    st.markdown("""---""")
+
+    # PART I
+    st.title("I. Smart Contracts: The Risks of a Shift to Using Code as Policy")
+        [cite_start]st.markdown('<div style="text-align: justify"> A smart contract is a self-executing computer program or transaction protocol hosted on a blockchain[cite: 6]. [cite_start]It automatically performs, controls, or documents relevant events and actions according to the terms of an agreement[cite: 7]. [cite_start]They allow the issuance, transfer, and redemption of tokenized assets, ensuring the digital "token" accurately reflects the underlying value and legal rights of the physical or financial asset[cite: 8]. [cite_start]Smart contracts are increasingly viewed as "digital plumbing", the foundational infrastructure for automated financial services but their usage comes with critical risks[cite: 9]: </div>', unsafe_allow_html=True)
+    
+    st.markdown('**<div style="text-align: justify"> The Logic Flaw (Model Risk / Deterministic Risk) </div>**', unsafe_allow_html=True)
+    [cite_start]st.markdown('<div style="text-align: justify"> The smart contract code can be written with a logic flaw and generate unintended bugs[cite: 10]. [cite_start]If the code has a flaw, the failure is automatic, instantaneous, and potentially systemic (e.g., calculating interest incorrectly)[cite: 11]. [cite_start]In the current state of art, majority of smart contracts aren’t audited[cite: 12]. [cite_start]This generates an important model risk for frozen logic[cite: 13]. </div>', unsafe_allow_html=True)
+
+    st.markdown('**<div style="text-align: justify"> The Blockchain Reversibility Issue (Operational Risk and Technology Risk) </div>**', unsafe_allow_html=True)
+    [cite_start]st.markdown('<div style="text-align: justify"> By design, blockchain technology is immutable[cite: 14]. [cite_start]Any mistake in the sender or receiver address, or a vulnerability in the contract code, can result in permanent loss [cite: 15] (e.g., "If issuer send $10M to the wrong address or get hacked") [cite_start][cite: 16]. </div>', unsafe_allow_html=True)
+
+    st.markdown('**<div style="text-align: justify"> Oracle Reliance (Data Risk) </div>**', unsafe_allow_html=True)
+    [cite_start]st.markdown('<div style="text-align: justify"> Smart contract require access to real-time external data to fulfil code obligations (e.g., "If the S&P 500 hits 4,000, pay the dividend")[cite: 17]. [cite_start]If the data feed (Oracle) is hacked or glitched, the contract executes incorrectly putting the institutions at risk[cite: 18]. </div>', unsafe_allow_html=True)
+
+    st.markdown('**<div style="text-align: justify"> Legal Enforceability Gap (Compliance Risk) </div>**', unsafe_allow_html=True)
+    [cite_start]st.markdown('<div style="text-align: justify"> Smart contract can generate a conflict of authority if the execution of the contract results in the violation of the law or of a superior paper contract [cite: 19] (e.g., A bankruptcy court freezes assets, but the smart contract automatically liquidates them anyway) [cite_start][cite: 20]. </div>', unsafe_allow_html=True)
+
+    st.markdown('**<div style="text-align: justify"> The Protocol Bridge (The Interoperability Risk) </div>**', unsafe_allow_html=True)
+    [cite_start]st.markdown('<div style="text-align: justify"> Institutions bridge assets because no single blockchain offers everything; they need to move value to access different benefit as Blockchains cannot speak to each other[cite: 21]. [cite_start]The intent of bridging is to acknowledging data from a blockchain to another one[cite: 22]. [cite_start]As of 2026, this process is the one that caused the highest loss in decentralized finance[cite: 23]. </div>', unsafe_allow_html=True)
+    
+    [cite_start]st.markdown('<div style="text-align: justify"> An example of bridging would be JPMorgan issuing a "Tokenized Bond" on its own private, secure blockchain (Onyx) to comply with regulations[cite: 24]. [cite_start]However, the buyers (hedge funds) are holding their stablecoins on a public blockchain (Ethereum)[cite: 25]. [cite_start]To sell the bond, JPMorgan will bridge the asset (or the ownership rights) from their private fortress to the public market where the liquidity is[cite: 26]. </div>', unsafe_allow_html=True)
+
+    st.markdown("""---""")
+
+    # PART II
+    st.title("II. Bridging the Gap: Designing DLT Specific Controls and Applying Traditional SDLC")
+        [cite_start]st.markdown('<div style="text-align: justify"> To mitigates the risks enounced, the DTCC, backbone of United States financial market, enacted specific solutions based on their Digital Asset Securities Control Principles (DASCP) and Security of DLT Networks whitepapers[cite: 28]. </div>', unsafe_allow_html=True)
+
+    st.markdown('**<div style="text-align: justify"> Governance Backdoors and Clawbacks </div>**', unsafe_allow_html=True)
+    [cite_start]st.markdown('<div style="text-align: justify"> Firstly, the DTCC is planning to enforce standards where smart contracts must have "administrative backdoors" (controlled by governance) to pause, upgrade, or terminate a contract if a bug is found[cite: 29]. [cite_start]For instance, if a "Tokenized Bond" smart contract has a coding error that prevents it from paying a coupon, the DTCC would use its governance key to pause trading and deploy a patched contract, ensuring the market doesn\'t freeze[cite: 30]. </div>', unsafe_allow_html=True)
+    
+    [cite_start]st.markdown('<div style="text-align: justify"> To manage irreversibility risk, the DTCC is building the Compliance Aware Token Framework[cite: 31]. [cite_start]This embeds logic inside the token that checks "Is this receiver allowed to hold this asset?" before moving[cite: 32]. [cite_start]More importantly, they manage the "Clawback" function: The DTCC will retain the right to "burn" stolen tokens and "mint" replacements for the rightful owner, effectively reversing the transaction on the ledger[cite: 33]. </div>', unsafe_allow_html=True)
+
+    st.markdown('**<div style="text-align: justify"> Vetted Oracles and Legal Mapping </div>**', unsafe_allow_html=True)
+    [cite_start]st.markdown('<div style="text-align: justify"> Moreover, The DTCC plans to be the ultimate vetted Oracle[cite: 34]. [cite_start]Instead of relying on a third-party crypto oracle (like a random node), the smart contract will be hardcoded to only accept pricing/corporate action data signed by the DTCC’s private key[cite: 35]. [cite_start]The institution is also creating a framework where every smart contract is legally mapped to a traditional paper contract[cite: 36]. [cite_start]The code is merely the execution arm of a legal agreement, not the agreement itself[cite: 37]. </div>', unsafe_allow_html=True)
+
+    st.markdown('**<div style="text-align: justify"> Monitoring Interoperability </div>**', unsafe_allow_html=True)
+    [cite_start]st.markdown('<div style="text-align: justify"> Finally, in order to properly monitor interoperability risk, the DTCC is actively testing Chainlink’s CCIP (Cross-Chain Interoperability Protocol) to create a standard "messaging layer" that connects private bank chains securely[cite: 38]. [cite_start]They manage the risk by validating the message between chains rather than just moving the token blindly[cite: 39]. [cite_start]These DLT focused risks would need to be covered by controls[cite: 40]. </div>', unsafe_allow_html=True)
+
+    st.markdown("""---""")
+
+    # PART III (Conclusion/Experience)
+    st.title("III. Conclusion: Technical Security is Inseparable from Governance")
+    
+    [cite_start]st.markdown('<div style="text-align: justify"> In my experience, leading the migration of over 200 high-risk models and tools to SDLC platforms at Morgan Stanley, the primary lesson was that technical security is inseparable from governance[cite: 41]. [cite_start]For smart contracts to be "clearinghouse-ready," they must undergo a rigorous lifecycle[cite: 42]: </div>', unsafe_allow_html=True)
+
+    st.markdown("""
+    * [cite_start]**Pre-Deployment Validation:** Much like the 235 models I governed, smart contracts require independent data validation and control testing to ensure the logic aligns with internal risk policies[cite: 43].
+    * [cite_start]**Immutable Audits:** Every update to a settlement contract must be treated as a "major version" change, requiring full audit traceability—a standard I enforced to ensure data security and technology control standards[cite: 44].
+    * [cite_start]**Level 1 Control Automation:** By building automated risk reporting dashboards (using tools like Python and Power BI), firms can monitor contract execution in real-time, detecting anomalies before they impact the broader ledger[cite: 45].
+    """)
+
+    [cite_start]st.markdown('<div style="text-align: justify"> The successful integration of tokenized assets depends on our ability to wrap innovative technology in the "safety and soundness" frameworks that have protected capital markets for decades[cite: 46]. [cite_start]By leveraging existing expertise in model risk and tool governance, we can ensure that the move to blockchain is a move toward a more resilient, rather than more volatile, financial future[cite: 47]. </div>', unsafe_allow_html=True)
 
 if choose == "DeFi Analytic Paper - ML Regression Model":
 #Begin by uploading all datasets and APIs
