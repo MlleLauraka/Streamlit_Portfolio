@@ -38,9 +38,9 @@ if choose == "About":
     current_picture = Image.open("Pictures & Dataset Used/test_linkedin.png")
     column1.image(current_picture, width=400)
     column2.info("""
-    A fast-paced learner and natural investigator, I focus my skills on data science and analytics to extract the best insights from data and help you make meaningful decisions. 
-    I believe that working in a challenging company is essential for personal fulfillment. 
-    With international communication skills and a good team spirit, I have a great ability to adapt to new environments, cultures and methods.
+    Strategic Risk Manager with over 6 years of experience in model governance, operational risk, business analytics and digital asset frameworks.
+    Proven track record at top-tier financial institutions (Morgan Stanley, Societe Generale) managing complex control environments and migrating models and tools to secure SDLC platforms. 
+    Combining deep technical expertise in SQL, Power BI, and Python with a focused interest in blockchain and digital asset regulation to drive safe innovation.
     \n\n[Laura's LinkedIn](https://www.linkedin.com/in/laura-kouadio-083374131/) - [Laura's' GitHub](https://github.com/MlleLauraka/)""")
 
     #Create new columns for the main part
@@ -65,21 +65,19 @@ if choose == "About":
     st.markdown("""---""")
     txt("**MORGAN STANLEY - New York, United States of America**", "*January 2023 - Present Time*")
     st.markdown("""
-            *RISK ANALYST - MODEL EUC METRICS (Firm Risk Management), ASSOCIATE FULL TIME*
-            - Identification and Streamlining of FRM Models (224) and Tools (195) implemented in EUCs and Systems: managing lifecycle from identification to inventory decommission and monitoring controls on Models and Tools.
-            - Project Management for FRM Citizen Lead Development Applications: Implementing a Control Framework to mitigate Operational Risk on all Firm Risk Management Applications which fall under neither Systems, nor EUCs category.
-            - Analytics and Business decision reporting: Build and Maintain Business Intelligence Decks (Power Bi, Tableau, VBA Excel macros) to design metrics, create threshold and analyze data for business decision reporting.
-            - Regulatory Reporting for CCAR and QST: Report to the Bank Capital Steering Committee on controls for models implemented using EUCs.
-            - Key Control Validation: Independent Review of FRM Key Controls Design and Performance (56).
-            - IMS Enhancement and UAT Testing: Gather issues or improvement about IMS System Logic or IMS System Layout
+            *RISK ANALYST - MODEL TOOL GOVERNANCE (Firm Risk Management), ASSOCIATE FULL TIME*
+            - Strategic Governance: Lead the control governance framework for 235 models and 210 end-user tools (EUCs), ensuring strict alignment with internal risk policies and technology control standards.
+            - Digital Transformation: Partner with IT and application owners to migrate high-risk models to SDLC platforms, enhancing data security and audit traceability.
+            - Data-Driven Insights: Build automated risk reporting dashboards in Power BI and VBA to identify emerging risks and support executive-level decision-making.
+            - Regulatory Compliance: Support CCAR and QST regulatory reporting by ensuring data completeness and control evidence integrity
             """)
 
     st.markdown("""---""")
     txt("**MORGAN STANLEY - New York, United States of America**", "*August 2022 - December 2023*")
     st.markdown("""
         *RISK ANALYST - MODEl EUC METRICS (Firm Risk Management), ANALYST FULL TIME*
-        - Created dashboard through Business intelligence tools (Power BI, SQL, VBA) to create and showcase metrics
-        - Worked hands in Hand with Credit Risk, Market Risk and Risk Analytic Teams to improve EUC Control metrics
+        - Created BI dashboards to track model and tool inventory metrics and highlight Key risk indicators (KRIs).
+        - Colaborated with Credit Risk, Market Risk and Risk Analytics Teams to reinforce data quality standards and governance oversight.
         """)
 
     st.markdown("""---""")
@@ -122,7 +120,7 @@ if choose == "About":
     txt("**Master’s Degree - Audit, Management Accounting & Finance (GPA 3.6)**","*September 2017 - May 2019*")
     st.markdown(""" - SKEMA BUSINESS SCHOOL (AACSB Accredited) - Suzhou, China & Sophia Antipolis, France\n\n""")
 
-    txt("**Bachelor’s Degree - Economics and Law**","*September 2013 - June 2016*")
+    txt("**Bachelor’s Degree - Bi License Economics and Law**","*September 2013 - June 2016*")
     st.markdown(""" - PARIS NANTERRE UNIVERSITY - Nanterre, France""")
 
     st.markdown("""---""")
@@ -133,7 +131,7 @@ if choose == "About":
     - **Global Young Leader Program 2019:** Hackathon at Ben Gourion University of the Neguev, Israel (3rd place Award)
     - **SKEMA Gala Organizer:** Setting up the Communication Style, Planning Operation and Entertainment, Hosting the Event
     - **Road Trip & Backpacking:** Travel in Asia (China, Indonesia, Malaysia, Thailand)
-    - **Sport:** Weightlifting and Hit Workout
+    - **Sport:** Weightlifting and Hiit Workout
     """)
 
     #Download Resume
